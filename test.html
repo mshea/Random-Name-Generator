@@ -19,30 +19,35 @@ last_names_one = ["Angel","Anvil","Black","Bull","Blue","Bright","Broad","Bronze
 
 last_names_two = ["bane","brissle","flinger","spear","whisper","wing","cloak","lover","hand","boot","belly","rock","hoof","smile","tongue","ear","caller","stone","stalker","walker","chaser","gust","kin","bottom","blade","razor","trail","sail","kite","singer","hood","fang","helm","viper","harp","glove","dance","dancer","heart","hound","wind","caster","toes","soother","seeker","finger","blood","sorcerer","hunter","brood","dazer","sharp","house","maker","teeth","chewer","giver","born","touch","gaze","cowl","thumb","forger","knee","talker","hair","chest","runner","change","board","master","tromp","hammer","heart","son","maul","claw","kiss","bond","beard","hide","bound","traveler","howler","cry","tooth","laugher","knee","steel","carol","song","soul","kick","crippler","watcher","chuckle","brow","knocker","bright","willow"];
 
+var count = 500;
+
 function shuffle(list, count){
 	output = [];
 	for (var i=0;i<count;i++) {
 		if (i % list.length == 0) {
 			for(var j, x, k = list.length; k; j = Math.floor(Math.random() * k), x = list[--k],list[k] = list[j], list[j] = x);
 		}
-		//console.log(list[i % list.length]);
 		output.push(list[i % list.length]);
 	}
 	return output;		
 };
 
 function show() {
-	var first_names_shuffled = shuffle(first_names,500);
-	console.log(first_names_shuffled);
-	$("div#namelist").html("<p>"+first_names_shuffled.join(", "));
+	var first_names_shuffled = shuffle(first_names, count);
+	var last_names_one_shuffled = shuffle(last_names_one, count);
+	var last_names_two_shuffled = shuffle(last_names_two, count);
+	var output_string_list = [];
+	for (var i=0;i<count;i++) {
+		output_string_list.push(first_names_shuffled[i] + " " + last_names_one_shuffled[i] + last_names_two_shuffled[i]);
+	}
+	$("div#namelist").html("<p>"+output_string_list.join(", "));
 }
 
-name_list = show();
-
-// JQuery to load the lists into the page.
 $(document).ready(function() {
     show();
-    $("#reload").bind("click",show());
+	$("#reload").bind("click",function(){
+		show();
+	});
 });
 </script>
 
