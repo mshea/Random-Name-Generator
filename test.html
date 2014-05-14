@@ -13,28 +13,28 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script type="text/javascript">
 
-
-first_names = ["Amabel","Ambrosia","Augustina","Bellamy","Blanche","Branwen","Caia","Celestia","Cicely","Circe","Clementina","Clio","Cornelia","Dolly","Domino","Electra","Elspeth","Federica","Finola","Fleur","Franny","Henrietta","Honora","Ione","Isolde","Jacinta","Jezebel","Kiernan","Lake","Leonie","Lilou","Lucienne","Lux","Olympia","Ondine","Paz","Pippa","Sabra","Saffron","Saskia","Sinead","Snow","Tamsin","Tanaquil","Tansy","Toril","Tulip","Valentine","Verena","Vita","Ahmet","Amias","Balthazar","Barnabas","Birch","Breccan","Brick","Calloway","Cashel","Casimir","Clancy","Cosmo","Day","Fergus","Griffith","Guthrie","Hamish","Hart","Inigo","Jago","Jedediah","Jotham","Kermit","Laird","Lorcan","Malachy","Maxfield","North","Oberon","Ogden","Orson","Osborne","Oswald","Ozias","Pike","Prescott","Raoul","Redmond","Romulus","Rufus","Serge","Stellan","Thornton","Tiberius","Tobiah","Vaughan","Walden","Ward","Webster","Win","Jackson","Aiden","Liam","Lucas","Noah","Mason","Jayden","Ethan","Jacob","Jack","Caden","Logan","Caleb","Ryan","Alexander","Elijah","James","William","Oliver","Connor","Luke","Brayden","Jayce","Henry","Carter","Dylan","Gabriel","Nicholas","Isaac","Owen","Nathan","Grayson","Eli","Landon","Gavin","Wyatt","Christian","Hunter","Cameron","Evan","Sebastian","Dominic","Colton","Tyler","Zachary","Julian","Levi","Parker","Miles","Chase","Blake","Austin","Jordan","Adrian","Colin","Hudson","Ian","Xavier","Camden","Tristan","Carson","Nolan","Riley","Brody","Nathaniel","Josiah","Declan","Asher","Cole","Mateo","Micah","Elliot","Sophia","Emma","Olivia","Isabella","Mia","Ava","Lily","Zoe","Chloe","Layla","Madison","Madelyn","Abigail","Aubrey","Charlotte","Amelia","Ella","Kaylee","Avery","Aaliyah","Hailey","Hannah","Addison","Riley","Harper","Aria","Arianna","Mackenzie","Lila","Evelyn","Adalyn","Grace","Ellie","Anna","Kaitlyn","Isabelle","Sophie","Scarlett","Natalie","Leah","Nora","Mila","Lillian","Kylie","Audrey","Lucy","Maya","Annabelle","Makayla","Elena","Claire","Savannah","Alaina","Stella","Liliana","Allison","Keira","Alyssa","Reagan","Alexandra","Violet","Sadie","Ruby","Eva","Eliana","Taylor","Callie","Penelope","Camilla","Bailey","Kaelyn","Alexis","Kayla","Sydney","Lauren","Jasmine","Bella","Adeline","Caroline","Vivian","Juliana","Gianna","Skyler","Jordyn",];
+var first_names = ["Amabel","Ambrosia","Augustina","Bellamy","Blanche","Branwen","Caia","Celestia","Cicely","Circe","Clementina","Clio","Cornelia","Dolly","Domino","Electra","Elspeth","Federica","Finola","Fleur","Franny","Henrietta","Honora","Ione","Isolde","Jacinta","Jezebel","Kiernan","Lake","Leonie","Lilou","Lucienne","Lux","Olympia","Ondine","Paz","Pippa","Sabra","Saffron","Saskia","Sinead","Snow","Tamsin","Tanaquil","Tansy","Toril","Tulip","Valentine","Verena","Vita","Ahmet","Amias","Balthazar","Barnabas","Birch","Breccan","Brick","Calloway","Cashel","Casimir","Clancy","Cosmo","Day","Fergus","Griffith","Guthrie","Hamish","Hart","Inigo","Jago","Jedediah","Jotham","Kermit","Laird","Lorcan","Malachy","Maxfield","North","Oberon","Ogden","Orson","Osborne","Oswald","Ozias","Pike","Prescott","Raoul","Redmond","Romulus","Rufus","Serge","Stellan","Thornton","Tiberius","Tobiah","Vaughan","Walden","Ward","Webster","Win","Jackson","Aiden","Liam","Lucas","Noah","Mason","Jayden","Ethan","Jacob","Jack","Caden","Logan","Caleb","Ryan","Alexander","Elijah","James","William","Oliver","Connor","Luke","Brayden","Jayce","Henry","Carter","Dylan","Gabriel","Nicholas","Isaac","Owen","Nathan","Grayson","Eli","Landon","Gavin","Wyatt","Christian","Hunter","Cameron","Evan","Sebastian","Dominic","Colton","Tyler","Zachary","Julian","Levi","Parker","Miles","Chase","Blake","Austin","Jordan","Adrian","Colin","Hudson","Ian","Xavier","Camden","Tristan","Carson","Nolan","Riley","Brody","Nathaniel","Josiah","Declan","Asher","Cole","Mateo","Micah","Elliot","Sophia","Emma","Olivia","Isabella","Mia","Ava","Lily","Zoe","Chloe","Layla","Madison","Madelyn","Abigail","Aubrey","Charlotte","Amelia","Ella","Kaylee","Avery","Aaliyah","Hailey","Hannah","Addison","Riley","Harper","Aria","Arianna","Mackenzie","Lila","Evelyn","Adalyn","Grace","Ellie","Anna","Kaitlyn","Isabelle","Sophie","Scarlett","Natalie","Leah","Nora","Mila","Lillian","Kylie","Audrey","Lucy","Maya","Annabelle","Makayla","Elena","Claire","Savannah","Alaina","Stella","Liliana","Allison","Keira","Alyssa","Reagan","Alexandra","Violet","Sadie","Ruby","Eva","Eliana","Taylor","Callie","Penelope","Camilla","Bailey","Kaelyn","Alexis","Kayla","Sydney","Lauren","Jasmine","Bella","Adeline","Caroline","Vivian","Juliana","Gianna","Skyler","Jordyn",];
 
 last_names_one = ["Angel","Anvil","Black","Bull","Blue","Bright","Broad","Bronze","Brown","Cat","Copper","Drake","Dark","Dawn","Dirt","Dog","Doom","Drum","Dragon","Dusk","Dust","Eagle","Earth","Ebon","Emerald","Flame","Fire","Foe","Flower","Forge","Fox","Frost","Gust","Gem","Gentle","Goose","Giant","Ghost","Ghoul","Glory","Gold","Grave","Gravel","Gray","Green","Hair","Half","Harp","Hawk","Hero","Hill","Holly","Iron","Jewel","Kill","Late","Law","Leaf","Light","Lion","Long","Mace","Mill","Monster","Moon","Mountain","Needle","Oak","Quick","Red","Riddle","Rain","Sharp","Stale","Shield","Siege","Scale","Silver","Smile","Spine","Song","Spell","Spirit","Spring","Star","Storm","Strife","Swift","Sword","Tall","Thorn","Tiger","Titan","Trail","Tree","White","Wise","Wolf","Wyrms","Yellow",];
 
 last_names_two = ["bane","brissle","flinger","spear","whisper","wing","cloak","lover","hand","boot","belly","rock","hoof","smile","tongue","ear","caller","stone","stalker","walker","chaser","gust","kin","bottom","blade","razor","trail","sail","kite","singer","hood","fang","helm","viper","harp","glove","dance","dancer","heart","hound","wind","caster","toes","soother","seeker","finger","blood","sorcerer","hunter","brood","dazer","sharp","house","maker","teeth","chewer","giver","born","touch","gaze","cowl","thumb","forger","knee","talker","hair","chest","runner","change","board","master","tromp","hammer","heart","son","maul","claw","kiss","bond","beard","hide","bound","traveler","howler","cry","tooth","laugher","knee","steel","carol","song","soul","kick","crippler","watcher","chuckle","brow","knocker","bright","willow"];
 
-function shuffle(o){ //v1.0
-	for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-	return x;
+function shuffle(list, count){
+	output = [];
+	for (var i=0;i<count;i++) {
+		if (i % list.length == 0) {
+			for(var j, x, k = list.length; k; j = Math.floor(Math.random() * k), x = list[--k],list[k] = list[j], list[j] = x);
+		}
+		//console.log(list[i % list.length]);
+		output.push(list[i % list.length]);
+	}
+	return output;		
 };
 
 function show() {
-	var name_list = [];
-	for (i=0;i<500;i++) {
-		var string = "";
-		var first_name = shuffle(first_names);
-		var last_name_one = shuffle(last_names_one);
-		var last_name_two = shuffle(last_names_two);
-		name_list.push(first_name + " " + last_name_one + "" + last_name_two);
-	}
-	$("div#namelist").html("<p>"+name_list.join(", "));
+	var first_names_shuffled = shuffle(first_names,500);
+	console.log(first_names_shuffled);
+	$("div#namelist").html("<p>"+first_names_shuffled.join(", "));
 }
 
 name_list = show();
