@@ -8,37 +8,34 @@
 	h2,h3{font-size:1.2em;line-height:1.2em;margin:0;padding:0}
 	li{margin-bottom:.6em}
 </style>
-<title>Random Name Generator</title>
+<title>Random Fantasy Name Generator</title>
+
+<h1>Random Fantasy Name Generator</h1>
+
+<p>Coming up with good fantasy names is one of the harder tricks for the <a href="http://slyflourish.com/lazydm">Lazy Dungeon Master</a>. The following script generates a set of two hundred random names using a mixture of popular yet uncommon first names and last names generated from a pair of words. While many of these names may end up as nonsense, you are encouraged to read through the list until you find a name that clicks for whatever NPC you want to generate.
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script type="text/javascript">
 
-var first_names = ["Amabel","Ambrosia","Augustina","Bellamy","Blanche","Branwen","Caia","Celestia","Cicely","Circe","Clementina","Clio","Cornelia","Dolly","Domino","Electra","Elspeth","Federica","Finola","Fleur","Franny","Henrietta","Honora","Ione","Isolde","Jacinta","Jezebel","Kiernan","Lake","Leonie","Lilou","Lucienne","Lux","Olympia","Ondine","Paz","Pippa","Sabra","Saffron","Saskia","Sinead","Snow","Tamsin","Tanaquil","Tansy","Toril","Tulip","Valentine","Verena","Vita","Ahmet","Amias","Balthazar","Barnabas","Birch","Breccan","Brick","Calloway","Cashel","Casimir","Clancy","Cosmo","Day","Fergus","Griffith","Guthrie","Hamish","Hart","Inigo","Jago","Jedediah","Jotham","Kermit","Laird","Lorcan","Malachy","Maxfield","North","Oberon","Ogden","Orson","Osborne","Oswald","Ozias","Pike","Prescott","Raoul","Redmond","Romulus","Rufus","Serge","Stellan","Thornton","Tiberius","Tobiah","Vaughan","Walden","Ward","Webster","Win","Jackson","Aiden","Liam","Lucas","Noah","Mason","Jayden","Ethan","Jacob","Jack","Caden","Logan","Caleb","Ryan","Alexander","Elijah","James","William","Oliver","Connor","Luke","Brayden","Jayce","Henry","Carter","Dylan","Gabriel","Nicholas","Isaac","Owen","Nathan","Grayson","Eli","Landon","Gavin","Wyatt","Christian","Hunter","Cameron","Evan","Sebastian","Dominic","Colton","Tyler","Zachary","Julian","Levi","Parker","Miles","Chase","Blake","Austin","Jordan","Adrian","Colin","Hudson","Ian","Xavier","Camden","Tristan","Carson","Nolan","Riley","Brody","Nathaniel","Josiah","Declan","Asher","Cole","Mateo","Micah","Elliot","Sophia","Emma","Olivia","Isabella","Mia","Ava","Lily","Zoe","Chloe","Layla","Madison","Madelyn","Abigail","Aubrey","Charlotte","Amelia","Ella","Kaylee","Avery","Aaliyah","Hailey","Hannah","Addison","Riley","Harper","Aria","Arianna","Mackenzie","Lila","Evelyn","Adalyn","Grace","Ellie","Anna","Kaitlyn","Isabelle","Sophie","Scarlett","Natalie","Leah","Nora","Mila","Lillian","Kylie","Audrey","Lucy","Maya","Annabelle","Makayla","Elena","Claire","Savannah","Alaina","Stella","Liliana","Allison","Keira","Alyssa","Reagan","Alexandra","Violet","Sadie","Ruby","Eva","Eliana","Taylor","Callie","Penelope","Camilla","Bailey","Kaelyn","Alexis","Kayla","Sydney","Lauren","Jasmine","Bella","Adeline","Caroline","Vivian","Juliana","Gianna","Skyler","Jordyn",];
+var first_names =  ["Amabel","Ambrosia","Augustina","Bellamy","Blanche","Branwen","Caia","Celestia","Cicely","Clementina","Clio","Cornelia","Dolly","Domino","Electra","Elspeth","Federica","Finola","Fleur","Franny","Honora","Ione","Isolde","Jacinta","Jezebel","Kiernan","Lake","Leonie","Lucienne","Lux","Olympia","Ondine","Paz","Pippa","Sabra","Saffron","Saskia","Sinead","Tamsin","Tansy","Toril","Tulip","Valentine","Verena","Vita","Ahmet","Amias","Balthazar","Barnabas","Birch","Breccan","Brick","Calloway","Cashel","Casimir","Fergus","Griffith","Guthrie","Hart","Inigo","Jago","Jotham","Laird","Lorcan","Malachy","Maxfield","North","Oberon","Ogden","Orson","Osborne","Oswald","Ozias","Pike","Prescott","Raoul","Redmond","Romulus","Rufus","Serge","Stellan","Thornton","Tiberius","Tobiah","Vaughan","Walden","Ward","Jackson","Aiden","Liam","Lucas","Mason","Jayden","Ethan","Jacob","Jack","Caden","Logan","Caleb","Ryan","Alexander","Elijah","Connor","Luke","Brayden","Jayce","Carter","Dylan","Isaac","Owen","Nathan","Grayson","Eli","Landon","Gavin","Wyatt","Hunter","Cameron","Evan","Sebastian","Dominic","Colton","Tyler","Zachary","Julian","Levi","Parker","Miles","Chase","Blake","Austin","Jordan","Adrian","Colin","Hudson","Ian","Xavier","Camden","Tristan","Carson","Nolan","Riley","Brody","Nathaniel","Declan","Asher","Cole","Mateo","Micah","Sophia","Isabella","Mia","Ava","Lily","Layla","Madelyn","Abigail","Aubrey","Charlotte","Amelia","Ella","Kaylee","Avery","Alya","Hailey","Hannah","Addison","Riley","Harper","Aria","Arianna","Lila","Evelyn","Adalyn","Ellie","Isabelle","Sophie","Scarlett","Natalie","Leah","Nora","Mila","Lillian","Kylie","Audrey","Maya","Annabelle","Makayla","Elena","Claire","Savannah","Alaina","Stella","Liliana","Allison","Keira","Alyssa","Alexandra","Violet","Sadie","Ruby","Eva","Eliana","Taylor","Callie","Penelope","Camilla","Bailey","Kaelyn","Alexis","Kayla","Sydney","Lauren","Jasmine","Bella","Adeline","Caroline","Vivian","Juliana","Gianna","Skyler","Jordyn","Agustin","Alfred","Arlo","Anders","Brysen","Braylin","Blaise","Brice","Benton","Bodhi","Bridger","Brecken","Broderick","Coleman","Clinton","Coen","Cristiano","Corban","Cayson","Camilo","Cortez","Demarcus","Donte","Devan","Damari","Davon","Deon","Dimitri","Dangelo","Enoch","Elian","Eliseo","Ethen","Flynn","Franco","Gaige","Gibson","Graysen","Houston","Haiden","Hendrix","Ignacio","Jaylon","Jabari","Jakobe","Johann","Jaydan","Joziah","Jaron","Jaydin","Keon","Kael","Kyan","Kingsley","Kamren","Kohen","Keyon","Leighton","Lathan","Miller","Maxton","Mariano","Maksim","Malaki","Otto","Quinten","Roderick","Ross","Rey","Reuben","Tyrell","Thaddeus","Turner","Trystan","Tyree","Tyrese","Vaughn","Vihaan","Valentin","Zaire"];
 
-last_names_one = ["Angel","Anvil","Black","Bull","Blue","Bright","Broad","Bronze","Brown","Cat","Copper","Drake","Dark","Dawn","Dirt","Dog","Doom","Drum","Dragon","Dusk","Dust","Eagle","Earth","Ebon","Emerald","Flame","Fire","Foe","Flower","Forge","Fox","Frost","Gust","Gem","Gentle","Goose","Giant","Ghost","Ghoul","Glory","Gold","Grave","Gravel","Gray","Green","Hair","Half","Harp","Hawk","Hero","Hill","Holly","Iron","Jewel","Kill","Late","Law","Leaf","Light","Lion","Long","Mace","Mill","Monster","Moon","Mountain","Needle","Oak","Quick","Red","Riddle","Rain","Sharp","Stale","Shield","Siege","Scale","Silver","Smile","Spine","Song","Spell","Spirit","Spring","Star","Storm","Strife","Swift","Sword","Tall","Thorn","Tiger","Titan","Trail","Tree","White","Wise","Wolf","Wyrms","Yellow",];
+last_names_one = ["Angel","Anvil","Black","Blue","Bright","Broad","Bronze","Brown","Bull","Cat","Copper","Dark","Dawn","Dirt","Dog","Doom","Dragon","Drake",	"Drum","Dusk","Dust","Eagle","Earth","Ebon","Emerald","Fire","Flame","Flower","Foe","Forge","Fox","Frost","Gem","Gentle","Ghost","Ghoul","Giant","Glory","Gold","Goose","Grave","Gravel","Gray","Green","Gust","Hair","Half","Harp","Hawk","Hero","Hill","Holly","Iron","Jewel","Kill","Late","Law","Leaf","Light","Lion","Long","Mace","Mill","Monster","Moon","Mountain","Needle","Oak","Quick","Rain","Red","Riddle","Scale","Sharp","Shield","Siege","Silver","Smile","Song","Spell","Spine","Spirit","Spring","Stale","Star","Storm","Strife","Swift","Sword","Tall","Thorn","Tiger","Titan","Trail","Tree","White","Wise","Wolf","Wyrms","Yellow","Worm","Crow","Ox","Bear","Beast","Night"];
 
-last_names_two = ["bane","brissle","flinger","spear","whisper","wing","cloak","lover","hand","boot","belly","rock","hoof","smile","tongue","ear","caller","stone","stalker","walker","chaser","gust","kin","bottom","blade","razor","trail","sail","kite","singer","hood","fang","helm","viper","harp","glove","dance","dancer","heart","hound","wind","caster","toes","soother","seeker","finger","blood","sorcerer","hunter","brood","dazer","sharp","house","maker","teeth","chewer","giver","born","touch","gaze","cowl","thumb","forger","knee","talker","hair","chest","runner","change","board","master","tromp","hammer","heart","son","maul","claw","kiss","bond","beard","hide","bound","traveler","howler","cry","tooth","laugher","knee","steel","carol","song","soul","kick","crippler","watcher","chuckle","brow","knocker","bright","willow"];
+last_names_two = ["bane","beard","belly","blade","blood","board","bond","boot","born","bottom","bound","bright","brissle","brood","brow","caller","carol","caster","change","chaser","chest","chewer","chuckle","claw","cloak","cowl","crippler","cry","dance","dancer","dazer","ear","fang","finger","flinger","forger","gaze","giver","glove","gust","hair","hammer","hand","harp","heart","heart","helm","hide","hood","hoof","hound","house","howler","hunter","kick","kin","kiss","kite","knee","knee","knocker","laugher","lover","maker","master","maul","razor","rock","runner","sail","seeker","sharp","singer","smile","son","song","soother","sorcerer","soul","spear","stalker","steel","stone","talker","teeth","thumb","toes","tongue","tooth","touch","trail","traveler","tromp","viper","walker","watcher","whisper","willow","wind","wing","whisker"];
 
-var count = 500;
+var count = 200;
 
-function shuffle(list, count){
-	output = [];
-	for (var i=0;i<count;i++) {
-		if (i % list.length == 0) {
-			for(var j, x, k = list.length; k; j = Math.floor(Math.random() * k), x = list[--k],list[k] = list[j], list[j] = x);
-		}
-		output.push(list[i % list.length]);
-	}
-	return output;		
+function shuffle(list){
+	for(var j, x, k = list.length; k; j = Math.floor(Math.random() * k), x = list[--k],list[k] = list[j], list[j] = x);
 };
 
 function show() {
-	var first_names_shuffled = shuffle(first_names, count);
-	var last_names_one_shuffled = shuffle(last_names_one, count);
-	var last_names_two_shuffled = shuffle(last_names_two, count);
 	var output_string_list = [];
 	for (var i=0;i<count;i++) {
-		output_string_list.push(first_names_shuffled[i] + " " + last_names_one_shuffled[i] + last_names_two_shuffled[i]);
+		if(i % first_names.length == 0); shuffle(first_names);
+		if(i % last_names_one.length == 0) shuffle(last_names_one);
+		if(i % last_names_two.length == 0) shuffle(last_names_two);
+		output_string_list.push(first_names[i % first_names.length] + " " + last_names_one[i % last_names_one.length] + last_names_two[i % last_names_two.length]);
 	}
 	$("div#namelist").html("<p>"+output_string_list.join(", "));
 }
@@ -51,5 +48,12 @@ $(document).ready(function() {
 });
 </script>
 
-<h2>Random Names - <span id="reload">reload</a></h2>
-<div id="namelist">
+<h2>Random Names - <span id="reload">shuffle names</a></h2>
+<div id="namelist"></div>
+
+<h2>Using This Script</h2>
+
+<p>There are many ways to use this script. The easiest is to run it a few times, copying and pasting the results into a single page file you keep in your <a href="http://slyflourish.com/dm_walk_away_kit.html">GM Walk Away Kit</a>. You can also copy a few random names into any cheat sheet you build for whichever game system you choose. You can also keep this page handy and load it on your PC or mobile device whenever you need a good random name for your game.
+
+<p>This script is released under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution license</a>.
+
